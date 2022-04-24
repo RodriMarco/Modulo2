@@ -5,3 +5,18 @@
     border-color:black;
     border-width:5px;
 }
+p{
+    height: 100px;
+    width: 100px;
+    margin:0%;
+    background-color:blue;
+    text-align:center;
+
+
+}
+p:first-child{
+    background-color: red;
+}
+p:last-child{
+    background-color: green;
+}

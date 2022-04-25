@@ -4,19 +4,27 @@
     border-style:solid ;
     border-color:black;
     border-width:5px;
+    DISPLAY:flex;
+    justify-content: flex-end;
 }
-p{
+#Caja1{
     height: 100px;
     width: 100px;
     margin:0%;
     background-color:blue;
     text-align:center;
-
-
 }
-p:first-child{
-    background-color: red;
+#Caja2{
+    height: 100px;
+    width: 100px;
+    margin:0%;
+    background-color:red;
+    text-align:center;
 }
-p:last-child{
-    background-color: green;
+#Caja3{
+    height: 100px;
+    width: 100px;
+    margin:0%;
+    background-color:green;
+    text-align:center;
 }

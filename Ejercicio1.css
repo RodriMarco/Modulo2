@@ -1,30 +1,89 @@
-#contenedor{
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#contenedor {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
     height: 300px;
     width: 300px;
-    border-style:solid ;
-    border-color:black;
-    border-width:5px;
-    DISPLAY:flex;
-    justify-content: flex-end;
+    animation-name: MiAnimacion;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;
+    /* animation-fill-mode: forwards; */
+     color: white;
 }
-#Caja1{
+
+.caja {
     height: 100px;
     width: 100px;
-    margin:0%;
-    background-color:blue;
-    text-align:center;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#Caja2{
-    height: 100px;
+
+#Caja1 {
+    background-color: red;
+}
+
+#Caja2 {
+    background-color: blue;
+}
+
+#Caja3 {
+    background-color: green;
+
+}
+
+@keyframes MiAnimacion {
+    0% {
+        width: 300px;
+        flex-direction: column; 
+        align-items: flex-end;       
+    }
+    25% {
+        width: 300px;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    25.1%{
+        flex-direction: row; 
+    }
+    50%{
+        width: 100%;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+    }
+    65% {
+        width: 300px;
+
+    }
+
+}
+
+#contenedor:hover{
+    animation: MiAnimacion 5s ease; 
+    animation-iteration-count: infinite;
+}
+
+/* .boton{
+    display: inline-flex;
+    height: 50px;
     width: 100px;
-    margin:0%;
-    background-color:red;
-    text-align:center;
+    color: black;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: darkgrey;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;  
 }
-#Caja3{
-    height: 100px;
-    width: 100px;
-    margin:0%;
-    background-color:green;
-    text-align:center;
-}
+#ej1:hover{
+    transform: scale(1.05);
+    background-color: rgb(138, 138, 138);
+} */
